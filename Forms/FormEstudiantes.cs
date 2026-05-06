@@ -105,5 +105,10 @@ namespace accountableSystem.Forms
 
         private void btnBuscar_Click(object sender, EventArgs e) { CargarEstudiantes(txtBuscar.Text.Trim()); }
         private void txtBuscar_TextChanged(object sender, EventArgs e) { CargarEstudiantes(txtBuscar.Text.Trim()); }
+
+        private void lblHeader_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
