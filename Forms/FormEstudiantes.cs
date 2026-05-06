@@ -110,5 +110,10 @@ namespace accountableSystem.Forms
         {
 
         }
+
+        private void pnlSearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

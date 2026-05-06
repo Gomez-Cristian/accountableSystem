@@ -13,7 +13,7 @@ namespace accountableSystem.Forms
 
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.lblHeader = new System.Windows.Forms.Label();
             this.splitMain = new System.Windows.Forms.SplitContainer();
@@ -56,7 +56,7 @@ namespace accountableSystem.Forms
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(920, 50);
+            this.pnlHeader.Size = new System.Drawing.Size(891, 50);
             this.pnlHeader.TabIndex = 0;
             // 
             // lblHeader
@@ -67,7 +67,7 @@ namespace accountableSystem.Forms
             this.lblHeader.ForeColor = System.Drawing.Color.White;
             this.lblHeader.Location = new System.Drawing.Point(0, 0);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(920, 50);
+            this.lblHeader.Size = new System.Drawing.Size(891, 50);
             this.lblHeader.TabIndex = 0;
             this.lblHeader.Text = "Registro de Estudiantes";
             this.lblHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,8 +88,8 @@ namespace accountableSystem.Forms
             // 
             this.splitMain.Panel2.Controls.Add(this.pnlRight);
             this.splitMain.Panel2.Padding = new System.Windows.Forms.Padding(10);
-            this.splitMain.Size = new System.Drawing.Size(920, 530);
-            this.splitMain.SplitterDistance = 742;
+            this.splitMain.Size = new System.Drawing.Size(891, 530);
+            this.splitMain.SplitterDistance = 403;
             this.splitMain.TabIndex = 1;
             // 
             // grpDatos
@@ -113,7 +113,7 @@ namespace accountableSystem.Forms
             this.grpDatos.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.grpDatos.Location = new System.Drawing.Point(10, 10);
             this.grpDatos.Name = "grpDatos";
-            this.grpDatos.Size = new System.Drawing.Size(722, 510);
+            this.grpDatos.Size = new System.Drawing.Size(383, 510);
             this.grpDatos.TabIndex = 0;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos del Estudiante";
@@ -293,7 +293,7 @@ namespace accountableSystem.Forms
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlRight.Location = new System.Drawing.Point(10, 10);
             this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(154, 510);
+            this.pnlRight.Size = new System.Drawing.Size(464, 510);
             this.pnlRight.TabIndex = 0;
             // 
             // dgvEstudiantes
@@ -302,21 +302,21 @@ namespace accountableSystem.Forms
             this.dgvEstudiantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEstudiantes.BackgroundColor = System.Drawing.Color.White;
             this.dgvEstudiantes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(101)))), ((int)(((byte)(52)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(101)))), ((int)(((byte)(52)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEstudiantes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEstudiantes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEstudiantes.EnableHeadersVisualStyles = false;
-            this.dgvEstudiantes.Location = new System.Drawing.Point(0, 40);
+            this.dgvEstudiantes.Location = new System.Drawing.Point(0, 43);
             this.dgvEstudiantes.Name = "dgvEstudiantes";
             this.dgvEstudiantes.ReadOnly = true;
             this.dgvEstudiantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEstudiantes.Size = new System.Drawing.Size(154, 470);
+            this.dgvEstudiantes.Size = new System.Drawing.Size(464, 467);
             this.dgvEstudiantes.TabIndex = 0;
             // 
             // pnlSearch
@@ -328,8 +328,9 @@ namespace accountableSystem.Forms
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlSearch.Name = "pnlSearch";
             this.pnlSearch.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.pnlSearch.Size = new System.Drawing.Size(154, 40);
+            this.pnlSearch.Size = new System.Drawing.Size(464, 43);
             this.pnlSearch.TabIndex = 1;
+            this.pnlSearch.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSearch_Paint);
             // 
             // btnBuscar
             // 
@@ -349,7 +350,7 @@ namespace accountableSystem.Forms
             // txtBuscar
             // 
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBuscar.Location = new System.Drawing.Point(60, 7);
+            this.txtBuscar.Location = new System.Drawing.Point(64, 14);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(300, 23);
             this.txtBuscar.TabIndex = 1;
@@ -360,7 +361,7 @@ namespace accountableSystem.Forms
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.lblBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(58)))), ((int)(((byte)(95)))));
-            this.lblBuscar.Location = new System.Drawing.Point(0, 10);
+            this.lblBuscar.Location = new System.Drawing.Point(11, 16);
             this.lblBuscar.Name = "lblBuscar";
             this.lblBuscar.Size = new System.Drawing.Size(47, 15);
             this.lblBuscar.TabIndex = 0;
@@ -369,7 +370,7 @@ namespace accountableSystem.Forms
             // FormEstudiantes
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(920, 580);
+            this.ClientSize = new System.Drawing.Size(891, 580);
             this.Controls.Add(this.splitMain);
             this.Controls.Add(this.pnlHeader);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
