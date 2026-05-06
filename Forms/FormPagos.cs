@@ -32,10 +32,21 @@ namespace accountableSystem.Forms
 
         private void cmbEstudiante_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbEstudiante.SelectedValue == null || Convert.ToInt32(cmbEstudiante.SelectedValue) == 0) return;
-            CargarPagosEstudiante(Convert.ToInt32(cmbEstudiante.SelectedValue));
-        }
+            if (cmbEstudiante.SelectedValue != null)
 
+            {
+                int idEstudiante;
+                // Intentamos convertir el valor. Si es un número válido, cargamos los pagos.
+                if (int.TryParse(cmbEstudiante.SelectedValue.ToString(), out idEstudiante))
+                {
+                    if (idEstudiante > 0)
+                    {
+                        CargarPagosEstudiante(idEstudiante);
+                    }
+                }
+            }
+        }
+        
         private void CargarPagosEstudiante(int idEst)
         {
             try
