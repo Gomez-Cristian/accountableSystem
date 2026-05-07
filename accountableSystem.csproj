@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
-          Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -57,32 +56,77 @@
     <Compile Include="Program.cs" />
     <Compile Include="Classes\Conexion.cs" />
     <Compile Include="Classes\Sesion.cs" />
-    <Compile Include="Forms\FormLogin.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormLogin.Designer.cs"><DependentUpon>FormLogin.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormMenu.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormMenu.Designer.cs"><DependentUpon>FormMenu.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormUsuarios.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormUsuarios.Designer.cs"><DependentUpon>FormUsuarios.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormEstudiantes.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormEstudiantes.Designer.cs"><DependentUpon>FormEstudiantes.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormContactos.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormContactos.Designer.cs"><DependentUpon>FormContactos.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormPagos.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormPagos.Designer.cs"><DependentUpon>FormPagos.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormFacturas.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormFacturas.Designer.cs"><DependentUpon>FormFacturas.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormConsultaEst.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormConsultaEst.Designer.cs"><DependentUpon>FormConsultaEst.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormConsultaPagos.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormConsultaPagos.Designer.cs"><DependentUpon>FormConsultaPagos.cs</DependentUpon></Compile>
-    <Compile Include="Forms\FormReportes.cs"><SubType>Form</SubType></Compile>
-    <Compile Include="Forms\FormReportes.Designer.cs"><DependentUpon>FormReportes.cs</DependentUpon></Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEstudiantes.Designer.cs">
+      <DependentUpon>FormEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormContactos.Designer.cs">
+      <DependentUpon>FormContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPagos.Designer.cs">
+      <DependentUpon>FormPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFacturas.Designer.cs">
+      <DependentUpon>FormFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConsultaEst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsultaEst.Designer.cs">
+      <DependentUpon>FormConsultaEst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConsultaPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsultaPagos.Designer.cs">
+      <DependentUpon>FormConsultaPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReportes.Designer.cs">
+      <DependentUpon>FormReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="BD_accountableDB_MySQL.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
